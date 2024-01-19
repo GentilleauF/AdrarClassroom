@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="flex justify-center mt-6">
-      <button type="submit" class="bg-blackBg w-48 text-white">Envoyer</button>
+      <button type="submit" class="bg-blackBg w-48 text-white p-1 rounded">Envoyer</button>
     </div>
   </form>
 </template>
