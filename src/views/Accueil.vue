@@ -15,6 +15,3 @@ import Footer from "./components/Footer.vue"
   </section>
   <button class="bg-adrarGreen px-3 py-1 rounded mb-10">Mes cours favoris</button>
   <Footer/>
-</template>
-
-<style scoped></style>
