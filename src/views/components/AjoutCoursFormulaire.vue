@@ -1,8 +1,8 @@
 <template>
-      <form class="space-y-5 flex flex-col p-20 w-[60vw]" action="">
+      <form class="space-y-5 flex flex-col p-3 md:p-20 md:w-[60vw]" action="">
     <div class="flex flex-row justify-center items-center">
       <label
-        class="w-[15vw] font-medium leading-6 text-gray-900"
+        class="w-[20vw] font-medium leading-6 text-gray-900"
         htmlFor="username"
       >
         Titre du cours:
@@ -10,20 +10,20 @@
       <input
         type="text"
         required
-        class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
+        class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black  sm:text-sm sm:leading-6"
         id="username"
         name="username"
       />
     </div>
 
     <div class="flex flex-row justify-center items-center">
-      <label class="w-[15vw] font-medium leading-6 text-gray-900" htmlFor="img">
+      <label class="w-[20vw] font-medium leading-6 text-gray-900" htmlFor="img">
         Image du cours :
       </label>
       <input
         type="file"
         required
-        class="min-w-0 flex-auto rounded border border-gray-300 bg-white px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
+        class="min-w-0 flex-auto rounded border border-gray-300 bg-white px-3.5 py-2 text-black shadow-sm  sm:text-sm sm:leading-6"
         id="img"
         name="img"
       />
@@ -31,7 +31,7 @@
 
     <div class="flex flex-row justify-center items-center">
       <label
-        class="w-[15vw] font-medium leading-6 text-gray-900"
+        class="w-[20vw] font-medium leading-6 text-gray-900"
         htmlFor="lesson-content"
       >
         Contenu du cours :
@@ -39,7 +39,7 @@
       <textarea
         name="lesson-content"
         required
-        class="min-w-0 flex-auto rounded border border-gray-300 bg-white px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-inset focus:ring-gray-500 sm:text-sm sm:leading-6"
+        class="min-w-0 flex-auto rounded border border-gray-300 bg-white px-3.5 py-2 text-black shadow-sm sm:text-sm sm:leading-6"
         cols="30"
         rows="10"
       ></textarea>
