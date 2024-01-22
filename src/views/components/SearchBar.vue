@@ -1,5 +1,6 @@
 <script setup>
 import { MagnifyingGlassIcon } from "@heroicons/vue/24/solid";
+
 </script>
 
 <template>
@@ -8,6 +9,5 @@ import { MagnifyingGlassIcon } from "@heroicons/vue/24/solid";
     <router-link to="">
        <MagnifyingGlassIcon class="w-6" /> 
     </router-link>
-    
   </div>
 </template>

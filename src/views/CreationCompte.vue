@@ -1,4 +1,26 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import { supabase } from "../lib/supabaseClient";
+
+const name = ref('');
+const firstname = ref('');
+const mail = ref('');
+const session = ref('');
+
+async function submitForm(e) {
+  e.preventDefault()
+  const { error } = await supabase
+    .from('stagiaires')
+    .insert([
+      {
+        name: name.value,
+        firstname: firstname.value,
+        mail: mail.value,
+        session: session.value,
+      },
+    ]);
+}
+</script>
 
 <template>
   <div class="flex flex-col items-center mt-20 h-screen">
@@ -14,6 +36,7 @@
           Nom du stagiaire :
         </label>
         <input
+          v-model="name"
           type="text"
           required
           class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black sm:text-sm sm:leading-6"
@@ -28,6 +51,7 @@
           Prénom du stagiaire :
         </label>
         <input
+        v-model="firstname"
           type="text"
           required
           class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black sm:text-sm sm:leading-6"
@@ -42,6 +66,7 @@
           Mail:
         </label>
         <input
+        v-model="mail"
           type="mail"
           required
           class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black sm:text-sm sm:leading-6"
@@ -53,6 +78,7 @@
           >Choisissez une session :</label
         >
         <select
+        v-model="session"
           id="session"
           name="session"
           class="mt-1 flex-auto p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300"
@@ -64,6 +90,7 @@
       </div>
       <div class="flex justify-center">
         <button
+          @click="submitForm"
           type="submit"
           class="bg-blackBg w-48 mt-10 text-white p-1 rounded"
         >
