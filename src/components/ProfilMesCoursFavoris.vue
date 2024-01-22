@@ -6,7 +6,7 @@ import { PlusIcon } from "@heroicons/vue/24/solid";
 const cours = ref([]);
 
 async function getCours() {
-  const { data } = await supabase.from("countries").select().limit(3);
+  const { data } = await supabase.from("cours").select().limit(1);
   cours.value = data;
 }
 
@@ -22,7 +22,7 @@ onMounted(() => {
       <a href="/" v-for="cour in cours" :key="cour.id">
         <div class="flex flex-col justify-center mb-10 p-5 items-center border">
           <img class="w-24" src="../assets/vue.png" alt="img cours" />
-          <h4>{{ cour.name }}</h4>
+          <h4>{{ cour.title }}</h4>
         </div>
       </a>
       <a href="">
