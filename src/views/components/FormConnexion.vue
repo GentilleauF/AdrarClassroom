@@ -11,12 +11,12 @@
 
         <label class="pt-4 text-xl">Adresse mail:</label>
         <div class="flex justify-center">
-          <input type="email" id="name" class="p-2 w-128">
+          <input type="email" id="name" class="p-2 w-128 rounded-md" required>
         </div>
         
         <label  class="pt-8 text-xl">Mot de passe:</label>
         <div class="flex justify-center">
-          <input type="password" id="password" class="p-2 w-128">
+          <input type="password" id="password" class="p-2 w-128 rounded-md" required>
         </div>
         
         <a href="www.google.com" class="mt-4 mb-16 text-xl"><u>Mot de passe oublié</u></a>
