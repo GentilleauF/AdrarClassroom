@@ -1,6 +1,9 @@
-<script setup></script>
+<script setup>
+import HeaderAdmin from '../components/HeaderAdmin.vue';
+</script>
 
 <template>
+<HeaderAdmin/>
   <div class="flex flex-col items-center mt-20 h-screen">
     <h2 class="text-center mt-6 font-semibold text-3xl text-red-500">
       Création de compte stagiaire
