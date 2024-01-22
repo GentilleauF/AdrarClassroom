@@ -1,5 +1,11 @@
-<script setup></script>
+<script setup>
+import HeaderAdmin from '../components/HeaderAdmin.vue';
 
-<template></template>
+
+</script>
+
+<template>
+    <HeaderAdmin/>
+</template>
 
 <style scoped></style>
