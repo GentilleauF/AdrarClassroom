@@ -6,7 +6,9 @@ const routes = [
 	{path : '/:pathMatch(.*)*', name: '404', component: ()=>import('./views/404.vue')},
 	{path: '/creation-compte', name: 'CreationCompte', component: ()=>import('./views/CreationCompte.vue')},
 	{path: '/connexion', name: 'Connexion', component: ()=>import('./views/Connexion.vue')},
-	{path: '/profil', name: 'Profil', component: ()=>import('./views/Profil.vue')}
+	{path: '/profil', name: 'Profil', component: ()=>import('./views/Profil.vue')},
+	{path: '/ajout-cours', name: 'ajoutCour', component: ()=>import('./views/AjoutDunCours.vue')}
+	
 ]
 
 const router = createRouter({
