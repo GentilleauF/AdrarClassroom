@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import TheSidebar from "../components/TheSidebar.vue";
+</script>
 
-<template></template>
+<template>
+	<TheSidebar />
+</template>
 
 <style scoped></style>
