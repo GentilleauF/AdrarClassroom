@@ -13,11 +13,11 @@ import {ArrowLeftEndOnRectangleIcon} from '@heroicons/vue/24/solid'
             <div class="flex flex-row items-center">
                 <input type="search" class="w-96 rounded" placeholder="Rechercher">
                 <router-link to="">
-                  <MagnifyingGlassIcon class="text-white size-8"/>    
+                  <MagnifyingGlassIcon class="text-white size-8 hover:text-rose-600"/>    
                 </router-link>
             </div>
             <router-link to="">
-                <ArrowLeftEndOnRectangleIcon class="text-white size-10 m-5"/>
+                <ArrowLeftEndOnRectangleIcon class="text-white size-10 m-5 hover:text-rose-600"/>
             </router-link>
             
 
