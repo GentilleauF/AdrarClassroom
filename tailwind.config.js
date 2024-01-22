@@ -4,7 +4,9 @@ export default {
     theme: {
         extend: {
             colors: {
-                'adrarGreen': '#82B53F',
+                'red-adrar': '#E44432',
+                'yellow-adrar' : '#F69E0C',
+                'green-adrar': '#82B53F',
                 'blackBg' : '#212529'
             }
         },

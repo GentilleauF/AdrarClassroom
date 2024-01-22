@@ -1,11 +1,12 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { supabase } from "../../lib/supabaseClient";
+import { PlusIcon } from "@heroicons/vue/24/solid";
 
 const cours = ref([]);
 
 async function getCours() {
-  const { data } = await supabase.from("countries").select();
+  const { data } = await supabase.from("countries").select().limit(3);
   cours.value = data;
 }
 
@@ -16,12 +17,19 @@ onMounted(() => {
 
 <template>
   <div class="">
-    <h3 class="text-3xl font-bold text-green-adrar mb-6">Mes derniers cours</h3>
-    <div class="flex flex-col justify-start md:flex-row md:space-x-10">
+    <h3 class="text-3xl font-bold text-green-adrar mt-20 mb-6">Mes cours Favoris</h3>
+    <div class="flex flex-col justify-start items-center md:flex-row md:space-x-10">
       <a href="/" v-for="cour in cours" :key="cour.id">
         <div class="flex flex-col justify-center mb-10 p-5 items-center border">
           <img class="w-24" src="../../assets/vue.png" alt="img cours" />
           <h4>{{ cour.name }}</h4>
+        </div>
+      </a>
+      <a href="">
+        <div class="flex flex-col justify-center mb-10 p-5 items-center ">
+          <div class=" flex justify-center items-center bg-slate-100 size-10 rounded-full">
+            <PlusIcon class="size-6"/>
+          </div>
         </div>
       </a>
     </div>
