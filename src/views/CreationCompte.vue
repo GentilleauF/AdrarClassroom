@@ -1,5 +1,77 @@
 <script setup></script>
 
-<template></template>
+<template>
+  <div class="flex flex-col items-center mt-20 h-screen">
+    <h2 class="text-center mt-6 font-semibold text-3xl text-red-500">
+      Création de compte stagiaire
+    </h2>
+    <form class="space-y-5 flex flex-col p-3 md:p-20 md:w-[60vw]" action="">
+      <div class="flex flex-row justify-center items-center">
+        <label
+          class="w-[20vw] text-sm font-medium text-gray-700"
+          htmlFor="name"
+        >
+          Nom du stagiaire :
+        </label>
+        <input
+          type="text"
+          required
+          class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black sm:text-sm sm:leading-6"
+          id="name"
+        />
+      </div>
+      <div class="flex flex-row justify-center items-center">
+        <label
+          class="w-[20vw] text-sm font-medium text-gray-700"
+          htmlFor="firstname"
+        >
+          Prénom du stagiaire :
+        </label>
+        <input
+          type="text"
+          required
+          class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black sm:text-sm sm:leading-6"
+          id="firstname"
+        />
+      </div>
+      <div class="flex flex-row justify-center items-center">
+        <label
+          class="w-[20vw] text-sm font-medium text-gray-700"
+          htmlFor="mail"
+        >
+          Mail:
+        </label>
+        <input
+          type="mail"
+          required
+          class="rounded border flex-auto border-gray-300 bg-white px-3.5 py-2 text-black sm:text-sm sm:leading-6"
+          id="mail"
+        />
+      </div>
+      <div class="flex bg-white">
+        <label for="session" class="w-[20vw] text-sm font-medium text-gray-700"
+          >Choisissez une session :</label
+        >
+        <select
+          id="session"
+          name="session"
+          class="mt-1 flex-auto p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+        >
+          <option value="cda">CDA</option>
+          <option value="dev">dev</option>
+          <option value="reseaux">réseaux</option>
+        </select>
+      </div>
+      <div class="flex justify-center">
+        <button
+          type="submit"
+          class="bg-blackBg w-48 mt-10 text-white p-1 rounded"
+        >
+          Creer le compte
+        </button>
+      </div>
+    </form>
+  </div>
+</template>
 
 <style scoped></style>
