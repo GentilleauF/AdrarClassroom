@@ -6,8 +6,8 @@ import { EnvelopeIcon } from "@heroicons/vue/24/solid";
 <template>
   <footer class="flex justify-around bg-blackBg py-6 text-white">
     <div class="flex flex-1 flex-col items-center">
-      <img class="h-20 mb-5" src="../../assets/icons/logo_adrar.png" alt="" />
-      <img class="h-12 w-12" src="../../assets/icons/linkedin.png" alt="" />
+      <img class="h-20 mb-5" src="../assets/icons/logo_adrar.png" alt="" />
+      <img class="h-12 w-12" src="../assets/icons/linkedin.png" alt="" />
     </div>
 
 

@@ -7,7 +7,7 @@ const routes = [
 	{path: '/creation-compte', name: 'CreationCompte', component: ()=>import('./views/CreationCompte.vue')},
 	{path: '/connexion', name: 'Connexion', component: ()=>import('./views/Connexion.vue')},
 	{path: '/profil', name: 'Profil', component: ()=>import('./views/Profil.vue')},
-	{path: '/ajout-cours', name: 'ajoutCour', component: ()=>import('./views/AjoutDunCours.vue')}
+	{path: '/ajout-cours', name: 'ajoutCours', component: ()=>import('./views/AjoutDunCours.vue')}
 	
 ]
 
