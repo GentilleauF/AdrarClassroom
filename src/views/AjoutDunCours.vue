@@ -1,6 +1,6 @@
 <script setup>
-import AjoutCoursUpload from "./components/AjoutCoursUpload.vue";
-import AjoutCoursFormulaire from "./components/AjoutCoursFormulaire.vue";
+import AjoutCoursUpload from "../components/AjoutCoursUpload.vue";
+import AjoutCoursFormulaire from "../components/AjoutCoursFormulaire.vue";
 </script>
 
 <template>

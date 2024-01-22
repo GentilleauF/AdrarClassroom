@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import { supabase } from "../../lib/supabaseClient";
+import { supabase } from "../lib/supabaseClient";
 import { PlusIcon } from "@heroicons/vue/24/solid";
 
 const cours = ref([]);
@@ -21,7 +21,7 @@ onMounted(() => {
     <div class="flex flex-col justify-start items-center md:flex-row md:space-x-10">
       <a href="/" v-for="cour in cours" :key="cour.id">
         <div class="flex flex-col justify-center mb-10 p-5 items-center border">
-          <img class="w-24" src="../../assets/vue.png" alt="img cours" />
+          <img class="w-24" src="../assets/vue.png" alt="img cours" />
           <h4>{{ cour.name }}</h4>
         </div>
       </a>

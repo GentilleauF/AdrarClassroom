@@ -1,7 +1,7 @@
 <script setup>
-  import Header from './views/components/Header.vue';
-  import FormConnexion from './views/components/FormConnexion.vue';
-  import Footer from './views/components/Footer.vue';
+  import Header from '../components/Header.vue';
+  import FormConnexion from '../components/FormConnexion.vue';
+  import Footer from '../components/Footer.vue';
 </script>
 
 <template>
