@@ -5,7 +5,7 @@ import { supabase } from "../lib/supabaseClient";
 const cours = ref([]);
 
 async function getCours() {
-  const { data } = await supabase.from("countries").select();
+  const { data } = await supabase.from("cours").select();
   cours.value = data;
 }
 
@@ -19,9 +19,9 @@ onMounted(() => {
     <h3 class="text-3xl font-bold text-green-adrar mb-6">Mes derniers cours</h3>
     <div class="flex flex-col justify-start md:flex-row md:space-x-10">
       <a href="/" v-for="cour in cours" :key="cour.id">
-        <div class="flex flex-col justify-center mb-10 p-5 items-center border">
-          <img class="w-24" src="../assets/vue.png" alt="img cours" />
-          <h4>{{ cour.name }}</h4>
+        <div class="flex flex-col justify-center size-36 mb-10 p-5 items-center border">
+          <img class="w-24" :src="cour.image" alt="img cours" />
+          <h4 class="text-center">{{ cour.title }}</h4>
         </div>
       </a>
     </div>
