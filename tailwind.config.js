@@ -10,6 +10,8 @@ export default {
                 'blue-adrar': '#82C3E7',
                 'grey-adrar': '#737373',
                 'black-adrar': '#212529',
+
+                'green-dark-adrar': '#598028',
             },
         },
     },
