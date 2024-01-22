@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { supabase } from "../lib/supabaseClient";
+import HeaderAdmin from '../components/HeaderAdmin.vue';
 
 const name = ref('');
 const firstname = ref('');
@@ -23,6 +24,7 @@ async function submitForm(e) {
 </script>
 
 <template>
+<HeaderAdmin/>
   <div class="flex flex-col items-center mt-20 h-screen">
     <h2 class="text-center mt-6 font-semibold text-3xl text-red-500">
       Création de compte stagiaire
