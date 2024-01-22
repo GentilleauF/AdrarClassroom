@@ -13,13 +13,13 @@
     </div>
 
     <div class="flex flex-1 justify-center items-center space-x-10">
-      <a href="https://www.discord.com">
+      <a href="https://www.discord.com" target="_BLANK">
         <img class="w-10" src="../assets/icons/discord.png" alt="discord" />
       </a>
-      <a href="https://www.github.com">
+      <a href="https://www.github.com" target="_BLANK">
         <img class="w-10" src="../assets/icons/github.png" alt="git" />
       </a>
-      <a href="https://www.linkedin.com">
+      <a href="https://www.linkedin.com" target="_BLANK">
         <img
           class="w-10"
           src="../assets/icons/linkedin.png"
