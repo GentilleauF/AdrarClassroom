@@ -18,8 +18,7 @@ import ProfilMesCoursFavoris from "./components/ProfilMesCoursFavoris.vue";
 
     <ProfilChartJs />
   </section>
-
-  <Footer />
+  <Footer/>
 </template>
 
 <style scoped></style>
