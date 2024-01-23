@@ -4,7 +4,7 @@ import {ArrowLeftEndOnRectangleIcon} from '@heroicons/vue/24/solid'
 </script>
 
 <template>
-    <header class="bg-black">
+    <header class="bg-black-adrar">
         <div class="flex flex-row items-center justify-between">
             <div class="flex flex-row items-center">
                 <img class="size-24 p-2" src="../assets/images/logo-AdrarClassroom.png" alt="logo adrar classroom"/>
