@@ -3,10 +3,10 @@
 </script>
 
 <template>
-  <h1 class="text-center m-16 text-6xl">Bienvenue sur AdrarClassroom :)</h1>
+  <h1 class="text-center m-16 text-6xl">Bienvenue sur AdrarClassRoom :)</h1>
   <div class="flex justify-center py-8"> <!-- container (extérieur) -->
     <div class="size-1/3 border-2 border-black-adrar rounded-md"> <!-- container -->
-      <form class="flex flex-col text-center p-4 bg-blue-adrar"> <!-- container (intérieur)-->
+      <form class="flex flex-col text-center p-4 bg-blue-adrar"> <!-- container (intérieur) -->
         <h1 class="text-3xl"><strong>Connexion</strong></h1>
 
         <label class="pt-4 text-xl">Adresse mail:</label>
