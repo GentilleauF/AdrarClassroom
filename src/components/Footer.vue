@@ -7,9 +7,10 @@ import { EnvelopeIcon } from "@heroicons/vue/24/solid";
   <footer class="flex justify-around bg-blackBg py-6 text-white">
     <div class="flex flex-1 flex-col items-center">
       <img class="h-20 mb-5" src="../assets/icons/logo_adrar.png" alt="" />
-      <img class="h-12 w-12" src="../assets/icons/linkedin.png" alt="" />
+      <a href="https://www.linkedin.com/school/adrarnumerique/">
+        <img class="h-12 w-12" src="../assets/icons/linkedin.png" alt="" />
+      </a>
     </div>
-
 
     <div class="flex flex-col flex-1 items-center space-y-4">
       <h4 class="text-lg font-bold">CONTACT</h4>
@@ -23,9 +24,7 @@ import { EnvelopeIcon } from "@heroicons/vue/24/solid";
       </div>
     </div>
 
-
-
-    <div class="flex flex-col flex-1 items-center space-y-3">
+    <div class="hidden md:flex flex-col flex-1 items-center space-y-3">
       <router-link to="/">COURS</router-link>
       <router-link to="/">BLOG</router-link>
       <router-link to="/">MON ESPACE</router-link>

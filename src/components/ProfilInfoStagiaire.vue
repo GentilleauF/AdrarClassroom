@@ -3,7 +3,7 @@
     <div class=" flex flex-1 2xl:ml-20 m-5 ">
       <img
         src="../assets/profil-img.png"
-        class="w-36 h-36 rounded-full border-4 border-adrarGreen"
+        class="w-36 h-36 rounded-full border-4 border-green-adrar"
         alt="profil stagiaire"
       />
       <div class="flex flex-col justify-start mt-3 ml-10">

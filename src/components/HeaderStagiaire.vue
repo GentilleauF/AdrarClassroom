@@ -52,9 +52,9 @@ const toggleMenu = () => {
       <!-- Navigation links -->
       <nav class="hidden lg:flex text-white space-x-10">
         <RouterLink to="" class="hover:text-rose-600">Cours</RouterLink>
-        <RouterLink to="" class="hover:text-rose-600">Blog</RouterLink>
+        <RouterLink to="/blog" class="hover:text-rose-600">Blog</RouterLink>
         <RouterLink to="" class="hover:text-rose-600">Stagiaires</RouterLink>
-        <RouterLink to="/profil" class="hover:text-rose-600"
+        <RouterLink to="/" class="hover:text-rose-600"
           >Mon Espace</RouterLink
         >
       </nav>
@@ -93,14 +93,14 @@ const toggleMenu = () => {
       <RouterLink to="" class="block text-white py-2 px-4 hover:bg-gray-800"
         >Cours</RouterLink
       >
-      <RouterLink to="" class="block text-white py-2 px-4 hover:bg-gray-800"
+      <RouterLink to="/blog" class="block text-white py-2 px-4 hover:bg-gray-800"
         >Blog</RouterLink
       >
       <RouterLink to="" class="block text-white py-2 px-4 hover:bg-gray-800"
         >Stagiaires</RouterLink
       >
       <RouterLink
-        to="/profil"
+        to="/"
         class="block text-white py-2 px-4 hover:bg-gray-800"
         >Mon Espace</RouterLink
       >
