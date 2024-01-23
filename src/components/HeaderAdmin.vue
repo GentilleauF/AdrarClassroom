@@ -21,7 +21,8 @@ async function logout() {
 <template>
   <header class="bg-black-adrar">
     <div class="flex flex-row items-center justify-between">
-      <div class="flex flex-row items-center">
+      <RouterLink to="/accueil-formateur">
+        <div class="flex flex-row items-center">
         <img
           class="size-24 p-2"
           src="../assets/images/logo-AdrarClassroom.png"
@@ -29,6 +30,8 @@ async function logout() {
         />
         <p class="text-white">ADRAR ClassRoom</p>
       </div>
+      </RouterLink>
+      
       <div class="flex flex-row items-center">
         <input type="search" class="w-96 rounded" placeholder="Rechercher" />
         <router-link to="">
