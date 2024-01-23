@@ -51,9 +51,9 @@ const toggleMenu = () => {
 
       <!-- Navigation links -->
       <nav class="hidden lg:flex text-white space-x-10">
-        <RouterLink to="" class="hover:text-rose-600">Cours</RouterLink>
+        <RouterLink to="/cours" class="hover:text-rose-600">Cours</RouterLink>
         <RouterLink to="/blog" class="hover:text-rose-600">Blog</RouterLink>
-        <RouterLink to="" class="hover:text-rose-600">Stagiaires</RouterLink>
+        <RouterLink to="/stagiaires-liste" class="hover:text-rose-600">Stagiaires</RouterLink>
         <RouterLink to="/" class="hover:text-rose-600"
           >Mon Espace</RouterLink
         >
@@ -90,13 +90,13 @@ const toggleMenu = () => {
 
     <!-- Burger menu for small screens -->
     <div v-if="menuOpen" class="lg:hidden">
-      <RouterLink to="" class="block text-white py-2 px-4 hover:bg-gray-800"
+      <RouterLink to="/cours" class="block text-white py-2 px-4 hover:bg-gray-800"
         >Cours</RouterLink
       >
       <RouterLink to="/blog" class="block text-white py-2 px-4 hover:bg-gray-800"
         >Blog</RouterLink
       >
-      <RouterLink to="" class="block text-white py-2 px-4 hover:bg-gray-800"
+      <RouterLink to="/stagiaires-liste" class="block text-white py-2 px-4 hover:bg-gray-800"
         >Stagiaires</RouterLink
       >
       <RouterLink

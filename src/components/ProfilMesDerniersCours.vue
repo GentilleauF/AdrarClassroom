@@ -5,7 +5,7 @@ import { supabase } from "../lib/supabaseClient";
 const cours = ref([]);
 
 async function getCours() {
-  const { data } = await supabase.from("cours").select();
+  const { data } = await supabase.from("cours").select().limit(4);
   cours.value = data;
 }
 

@@ -25,10 +25,10 @@ import { EnvelopeIcon } from "@heroicons/vue/24/solid";
     </div>
 
     <div class="hidden md:flex flex-col flex-1 items-center space-y-3">
-      <router-link to="/">COURS</router-link>
-      <router-link to="/">BLOG</router-link>
+      <router-link to="/cours">COURS</router-link>
+      <router-link to="/blog">BLOG</router-link>
       <router-link to="/">MON ESPACE</router-link>
-      <router-link to="/">STAGIAIRES</router-link>
+      <router-link to="/stagiaires-liste">STAGIAIRES</router-link>
     </div>
   </footer>
 </template>
