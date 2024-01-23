@@ -2,6 +2,7 @@
 import { ArrowLeftEndOnRectangleIcon } from "@heroicons/vue/24/solid";
 import { RouterLink } from "vue-router";
 import { ref } from "vue";
+import { supabase } from "../lib/supabaseClient.js";
 </script>
 
 <script>
@@ -62,6 +63,7 @@ const toggleMenu = () => {
       <router-link class="hidden lg:flex" to="">
         <ArrowLeftEndOnRectangleIcon
           class="text-white size-6 m-5 hover:text-rose-600"
+          @click="logout"
         />
       </router-link>
 
@@ -107,3 +109,16 @@ const toggleMenu = () => {
     </div>
   </header>
 </template>
+
+<script>
+// Logout
+async function logout() {
+    const { error } = await supabase.auth.signOut();
+
+    if (error) {
+        console.log(error);
+    } else {
+        console.log("ByeBye (logged out)");
+    }
+}
+</script>
