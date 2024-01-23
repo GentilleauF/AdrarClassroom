@@ -9,7 +9,8 @@ const routes = [
 	{path: '/profil', name: 'Profil', component: ()=>import('./views/Profil.vue')},
 	{path: '/cours-detail', name: 'coursDetail', component: ()=>import('./views/CoursDetail.vue')},
 	{path: '/ajout-cours', name: 'ajoutCours', component: ()=>import('./views/AjoutDunCours.vue')}
-	
+	{path: '/ajout-cours', name: 'ajoutCours', component: ()=>import('./views/AjoutDunCours.vue')},
+	{path: '/blog', name: 'Blog', component: ()=>import('./views/Blog.vue')},	
 ]
 
 const router = createRouter({
