@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import { supabase } from "../lib/supabaseClient";
 import HeaderAdmin from "../components/HeaderAdmin.vue";
+import FooterAdmin from "../components/FooterAdmin.vue";
 
 const name = ref("");
 const firstname = ref("");
@@ -117,4 +118,5 @@ onMounted(() => {
             </div>
         </form>
     </div>
+    <FooterAdmin/>
 </template>

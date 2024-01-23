@@ -6,7 +6,7 @@ import { supabase } from "../lib/supabaseClient.js";
 </script>
 
 <template>
-  <header class="bg-black font-montserrat">
+  <header class="bg-black-adrar font-montserrat">
     <div class="flex flex-row items-center justify-between">
       <div class="flex flex-row items-center">
         <RouterLink to="/">

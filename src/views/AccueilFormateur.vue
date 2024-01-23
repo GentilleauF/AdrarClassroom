@@ -1,13 +1,13 @@
 <script setup>
 import HeaderAdmin from "../components/HeaderAdmin.vue";
 import GridFormateur from "../components/GridFormateur.vue";
-import Footer from "../components/Footer.vue";
+import FooterAdmin from "../components/FooterAdmin.vue";
 </script>
 
 <template>
     <HeaderAdmin />
     <GridFormateur />
-    <Footer/>
+    <FooterAdmin/>
 </template>
 
 <style scoped></style>
