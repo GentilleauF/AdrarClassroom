@@ -1,10 +1,11 @@
 <script setup>
 import { PhoneIcon } from "@heroicons/vue/24/solid";
 import { EnvelopeIcon } from "@heroicons/vue/24/solid";
+import { AtSymbolIcon } from '@heroicons/vue/24/solid'
 </script>
 
 <template>
-  <footer class="flex justify-around bg-blackBg py-6 text-white">
+  <footer class="flex justify-around bg-blackBg pt-6 text-white">
     <div class="flex flex-1 flex-col items-center">
       <img class="h-20 mb-5" src="../assets/icons/logo_adrar.png" alt="" />
       <a href="https://www.linkedin.com/school/adrarnumerique/">
@@ -31,4 +32,8 @@ import { EnvelopeIcon } from "@heroicons/vue/24/solid";
       <router-link to="/stagiaires-liste">STAGIAIRES</router-link>
     </div>
   </footer>
+      <div class="flex flex-row justify-center bg-blackBg text-white">
+      <p class="pt-2">Site web crée par la Blue Shrimp Company</p>
+      <img src="../assets/images/blue_jelly.png" alt="Logo Bleu Shrimp Company" class="size-10">
+    </div>
 </template>

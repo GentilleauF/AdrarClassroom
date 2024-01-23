@@ -11,8 +11,9 @@ const routes = [
 	{path: '/cours', name: 'cours', component: ()=>import('./views/Cours.vue')},
 	{path: '/blog', name: 'blog', component: ()=>import('./views/Blog.vue')},
 	{path: '/stagiaires-liste', name: 'stagiaireList', component: ()=>import('./views/stagiaireList.vue')},
-	{path: '/ajout-cours', name: 'ajoutCours', component: ()=>import('./views/AjoutDunCours.vue')}
-	
+	{path: '/ajout-cours', name: 'ajoutCours', component: ()=>import('./views/AjoutDunCours.vue')},
+	{path: '/ajout-cours', name: 'ajoutCours', component: ()=>import('./views/AjoutDunCours.vue')},
+	{path: '/blog', name: 'Blog', component: ()=>import('./views/Blog.vue')},	
 ]
 
 const router = createRouter({
