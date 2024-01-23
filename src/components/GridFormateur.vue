@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row">
+  <div class="flex flex-col lg:flex-row">
     <div class="grid grid-cols-3 m-14 basis-2/3">
       <div class="flex flex-col w-48 text-center items-center pb-16">
         <RouterLink to="/ajout-cours">

@@ -33,7 +33,7 @@ async function logout() {
       </RouterLink>
       
       <div class="flex flex-row items-center">
-        <input type="search" class="w-96 rounded" placeholder="Rechercher" />
+        <input type="search" class="hidden md:block w-96 rounded" placeholder="Rechercher" />
         <router-link to="">
           <MagnifyingGlassIcon class="text-white size-8 hover:text-red-adrar" />
         </router-link>
