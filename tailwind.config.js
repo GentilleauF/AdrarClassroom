@@ -13,6 +13,12 @@ export default {
 				'green-dark-adrar': '#598028',
 				'blackBg': '#212529'
 			},
+			fontFamily: {
+				'montserrat': ['Montserrat'],
+				'ysabeau':['Ysabeau'],
+				'lobster':['Lobster']
+		
+			  },
 		}
 	},
 };
