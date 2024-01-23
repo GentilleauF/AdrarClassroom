@@ -66,6 +66,7 @@ async function login() {
         console.log(error);
     } else {
         console.log(data);
+        window.location.href = '/accueil-formateur'
     }
 }
 
@@ -83,6 +84,7 @@ async function logout() {
 		console.log(error);
 	} else {
 		console.log("ByeBye (logged out)");
+        window.location.href = '/connexion'
 	}
 }
 </script>
