@@ -5,26 +5,6 @@ import { ref } from "vue";
 import { supabase } from "../lib/supabaseClient.js";
 </script>
 
-<script>
-const menuOpen = ref(false);
-
-const toggleMenu = () => {
-  console.log("ok");
-  menuOpen.value = !menuOpen.value;
-};
-
-// Logout
-async function logout() {
-    const { error } = await supabase.auth.signOut();
-
-    if (error) {
-        console.log(error);
-    } else {
-        console.log("ByeBye (logged out)");
-    }
-}
-</script>
-
 <template>
   <header class="bg-black font-montserrat">
     <div class="flex flex-row items-center justify-between">
@@ -120,3 +100,24 @@ async function logout() {
     </div>
   </header>
 </template>
+
+<script>
+// Menu burger
+const menuOpen = ref(false);
+
+const toggleMenu = () => {
+  console.log("ok");
+  menuOpen.value = !menuOpen.value;
+};
+
+// Logout
+async function logout() {
+    const { error } = await supabase.auth.signOut();
+
+    if (error) {
+        console.log(error);
+    } else {
+        console.log("ByeBye (logged out)");
+    }
+}
+</script>
