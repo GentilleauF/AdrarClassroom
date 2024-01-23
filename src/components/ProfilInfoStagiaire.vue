@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col bg-slate-200 justify-around md:flex-row ">
+  <section class="flex flex-col bg-slate-100 justify-around md:flex-row ">
     <div class=" flex flex-1 2xl:ml-20 m-5 ">
       <img
         src="../assets/profil-img.png"
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="flex flex-1 justify-center items-center space-x-10">
+    <div class="flex flex-1 justify-center items-center space-x-10 pb-6">
       <a href="https://www.discord.com">
         <img class="w-10" src="../assets/icons/discord.png" alt="discord" />
       </a>
