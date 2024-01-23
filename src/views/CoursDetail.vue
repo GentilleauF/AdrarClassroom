@@ -64,7 +64,7 @@ import { HeartIcon } from "@heroicons/vue/24/solid";
       </div>
       <img
         class="h-[35vh] w-44"
-        src="../../public/icons/CoursPhoto.png"
+        src="/icons/CoursPhoto.png"
         alt=""
       />
       <button class="bg-yellow-adrar p-2 rounded-md font-medium">

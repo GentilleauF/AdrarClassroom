@@ -22,5 +22,3 @@ import HeaderStagiare from "../components/HeaderStagiaire.vue"
   </section>
   <Footer/>
 </template>
-
-<style scoped></style>

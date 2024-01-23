@@ -5,15 +5,6 @@ import { ref } from "vue";
 import { supabase } from "../lib/supabaseClient.js";
 </script>
 
-<script>
-const menuOpen = ref(false);
-
-const toggleMenu = () => {
-  console.log("ok");
-  menuOpen.value = !menuOpen.value;
-};
-</script>
-
 <template>
   <header class="bg-black font-montserrat">
     <div class="flex flex-row items-center justify-between">
@@ -111,6 +102,14 @@ const toggleMenu = () => {
 </template>
 
 <script>
+// Menu burger
+const menuOpen = ref(false);
+
+const toggleMenu = () => {
+  console.log("ok");
+  menuOpen.value = !menuOpen.value;
+};
+
 // Logout
 async function logout() {
     const { error } = await supabase.auth.signOut();
