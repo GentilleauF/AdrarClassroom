@@ -8,7 +8,9 @@ import { AtSymbolIcon } from '@heroicons/vue/24/solid'
   <footer class="flex justify-around bg-blackBg pt-6 text-white">
     <div class="flex flex-1 flex-col items-center">
       <img class="h-20 mb-5" src="../assets/icons/logo_adrar.png" alt="" />
-      <img class="h-12 w-12" src="../assets/icons/linkedin.png" alt="" />
+      <a href="https://www.linkedin.com/school/adrarnumerique/">
+        <img class="h-12 w-12" src="../assets/icons/linkedin.png" alt="" />
+      </a>
     </div>
 
     <div class="flex flex-col flex-1 items-center space-y-4">
@@ -18,27 +20,17 @@ import { AtSymbolIcon } from '@heroicons/vue/24/solid'
         <p>05 34 31 38 10</p>
       </div>
       <div class="flex flex-row">
-        <AtSymbolIcon class="w-6 mr-5" />
+        <EnvelopeIcon class="w-6 mr-5" />
         <p>contact@adrar-numerique.com</p>
       </div>
     </div>
-    <div class="flex flex-row items-center">
-      <EnvelopeIcon class="w-6 mr-5" />
-      <p class="flex flex-row justify-center">
-        11, Avenue de l'Europe <br>
-        31520 RAMONVILLE-SAINT-AGNE
-      </p>
-    </div>
 
-
-
-    <div class="flex flex-col flex-1 items-center space-y-3">
+    <div class="hidden md:flex flex-col flex-1 items-center space-y-3">
       <router-link to="/">COURS</router-link>
-      <router-link to="/">BLOG</router-link>
+      <router-link to="/blog">BLOG</router-link>
       <router-link to="/profil">MON ESPACE</router-link>
       <router-link to="/">STAGIAIRES</router-link>
     </div>
-
   </footer>
       <div class="flex flex-row justify-center bg-blackBg text-white">
       <p class="pt-2">Site web crée par la Blue Shrimp Company</p>

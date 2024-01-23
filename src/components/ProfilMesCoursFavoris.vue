@@ -21,7 +21,7 @@ onMounted(() => {
     <div class="flex flex-col justify-start items-center md:flex-row md:space-x-10">
       <a href="/" v-for="cour in cours" :key="cour.id">
         <div class="flex flex-col justify-center mb-10 p-5 items-center border">
-          <img class="w-24" src="../assets/vue.png" alt="img cours" />
+          <img class="w-24" :src="cour.image" alt="img cours" />
           <h4>{{ cour.title }}</h4>
         </div>
       </a>
