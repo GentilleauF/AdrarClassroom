@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router';
             </div>
             <nav class="text-white space-x-10 text-xl">
                 <RouterLink to="" class="hover:text-red-adrar">Cours</RouterLink>
-                <RouterLink to="" class="hover:text-red-adrar">Blog</RouterLink>
+                <RouterLink to="/blog" class="hover:text-red-adrar">Blog</RouterLink>
                 <RouterLink to="" class="hover:text-red-adrar">Stagiaires</RouterLink>
                 <RouterLink to="/profil" class="hover:text-red-adrar">Mon Espace</RouterLink>
             </nav>
